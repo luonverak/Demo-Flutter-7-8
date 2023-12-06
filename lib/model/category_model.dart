@@ -16,5 +16,20 @@ final List<CategoryModel> listCategory = [
     id: 2,
     name: 'Women',
     image: 'asset/image/Windbeaker-With-Hood (2).jpg',
+  ),
+  CategoryModel(
+    id: 3,
+    name: 'Shoe',
+    image: 'asset/image/soe9.png',
+  ),
+  CategoryModel(
+    id: 4,
+    name: 'Kid',
+    image: 'asset/image/kid.webp',
+  ),
+  CategoryModel(
+    id: 5,
+    name: 'Kid',
+    image: 'asset/image/sport.webp',
   )
 ];

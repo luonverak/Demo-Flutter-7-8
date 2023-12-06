@@ -17,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
   late PageController _pageController;
   int selectedIndex = 0;
 
-  final List<Widget> page = const [
+  final List<Widget> page = const [ 
     HomeScreen(),
     SearchScreen(),
     FavoriteScreen(),
