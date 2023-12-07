@@ -87,6 +87,7 @@ class HomeScreen extends StatelessWidget {
                 children: List.generate(
                   listProduct.length,
                   (index) => productItem(
+                    context,
                     listProduct[index],
                   ),
                 ),
