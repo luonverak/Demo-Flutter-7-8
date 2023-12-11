@@ -29,7 +29,7 @@ final List<CategoryModel> listCategory = [
   ),
   CategoryModel(
     id: 5,
-    name: 'Kid',
+    name: 'Sport',
     image: 'asset/image/sport.webp',
   )
 ];

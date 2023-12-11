@@ -1,3 +1,5 @@
+import 'package:demo2/model/category_model.dart';
+
 class ProductModel {
   final int id;
   final String name;
@@ -7,16 +9,21 @@ class ProductModel {
   final String description;
   final List<String> size;
   late int counter;
+  late String? date;
+  final int fId;
 
-  ProductModel(
-      {required this.id,
-      required this.name,
-      required this.price,
-      required this.image,
-      required this.favorite,
-      required this.description,
-      required this.size,
-      required this.counter});
+  ProductModel({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.image,
+    required this.favorite,
+    required this.description,
+    required this.size,
+    required this.counter,
+    this.date,
+    required this.fId,
+  });
 }
 
 final List<ProductModel> listProduct = [
@@ -30,6 +37,8 @@ final List<ProductModel> listProduct = [
         'DESIGNED BY MR PORTER. A crew-neck T-shirt is the foundation for building so many outfits around, which is why it\'s always useful to have a few on hand. Our black Mr P. one has a regular fit that feels comfortable whether it\'s worn alone or layered. The cotton-jersey fabric is silicone-washed for a soft handle.',
     size: ['S', 'X', 'XL', 'XXL'],
     counter: 1,
+    date: 'New',
+    fId: listCategory[0].id,
   ),
   ProductModel(
     id: 2,
@@ -41,6 +50,8 @@ final List<ProductModel> listProduct = [
         'DESIGNED BY MR PORTER. A crew-neck T-shirt is the foundation for building so many outfits around, which is why it\'s always useful to have a few on hand. Our black Mr P. one has a regular fit that feels comfortable whether it\'s worn alone or layered. The cotton-jersey fabric is silicone-washed for a soft handle.',
     size: ['S', 'X', 'XL', 'XXL'],
     counter: 1,
+    date: 'New',
+    fId: listCategory[0].id,
   ),
   ProductModel(
     id: 3,
@@ -52,6 +63,7 @@ final List<ProductModel> listProduct = [
         'DESIGNED BY MR PORTER. A crew-neck T-shirt is the foundation for building so many outfits around, which is why it\'s always useful to have a few on hand. Our black Mr P. one has a regular fit that feels comfortable whether it\'s worn alone or layered. The cotton-jersey fabric is silicone-washed for a soft handle.',
     size: ['S', 'X', 'XL', 'XXL'],
     counter: 1,
+    fId: listCategory[1].id,
   ),
   ProductModel(
     id: 4,
@@ -63,6 +75,7 @@ final List<ProductModel> listProduct = [
         'DESIGNED BY MR PORTER. A crew-neck T-shirt is the foundation for building so many outfits around, which is why it\'s always useful to have a few on hand. Our black Mr P. one has a regular fit that feels comfortable whether it\'s worn alone or layered. The cotton-jersey fabric is silicone-washed for a soft handle.',
     size: ['S', 'X', 'XL', 'XXL'],
     counter: 1,
+    fId: listCategory[1].id,
   ),
   ProductModel(
     id: 5,
@@ -74,6 +87,7 @@ final List<ProductModel> listProduct = [
         'DESIGNED BY MR PORTER. A crew-neck T-shirt is the foundation for building so many outfits around, which is why it\'s always useful to have a few on hand. Our black Mr P. one has a regular fit that feels comfortable whether it\'s worn alone or layered. The cotton-jersey fabric is silicone-washed for a soft handle.',
     size: ['S', 'X', 'XL', 'XXL'],
     counter: 1,
+    fId: listCategory[0].id,
   ),
   ProductModel(
     id: 6,
@@ -85,6 +99,7 @@ final List<ProductModel> listProduct = [
         'DESIGNED BY MR PORTER. A crew-neck T-shirt is the foundation for building so many outfits around, which is why it\'s always useful to have a few on hand. Our black Mr P. one has a regular fit that feels comfortable whether it\'s worn alone or layered. The cotton-jersey fabric is silicone-washed for a soft handle.',
     size: ['S', 'X', 'XL', 'XXL'],
     counter: 1,
+    fId: listCategory[2].id,
   ),
   ProductModel(
     id: 7,
@@ -96,5 +111,6 @@ final List<ProductModel> listProduct = [
         'DESIGNED BY MR PORTER. A crew-neck T-shirt is the foundation for building so many outfits around, which is why it\'s always useful to have a few on hand. Our black Mr P. one has a regular fit that feels comfortable whether it\'s worn alone or layered. The cotton-jersey fabric is silicone-washed for a soft handle.',
     size: ['S', 'X', 'XL', 'XXL'],
     counter: 1,
+    fId: listCategory[2].id,
   )
 ];
